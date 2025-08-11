@@ -1,1 +1,1 @@
-# JS-ALL-Concepts
+# Daily-quote
