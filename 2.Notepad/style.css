@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    background-color: pink;
+    padding-block: 25px;
+}
+.notepad{
+    width: 30%;
+    height: 40vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+#display{
+    width:20%;
+    height: 25vh;
+}
+.btn input{
+    float: right;
+    margin: 8px 12px;
+  
+}
+.btn input:nth-child(1){
+    background-color: rgb(107, 196, 107);
+    border: none;
+    padding: 10px;
+}
+.btn input:nth-child(2){
+    background-color: transparent;
+    border: 1px solid rgb(236, 106, 106);
+    padding: 10px;
+}
+.btn input:hover{
+    opacity: 0.9;
+}
+.btn input:nth-child(2):hover{
+    background-color: rgb(243, 158, 130);
+}
+#text-value{
+    margin: 12px;
+    padding:20px;
+    border: 2px solid green;
+    outline: none;
+}
