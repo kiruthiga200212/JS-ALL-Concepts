@@ -13,7 +13,7 @@ input.addEventListener('input', () => {
 // Save button: append new text to savedText
 saveBtn.addEventListener('click', () => {
     if (input.value.trim() !== '') {
-        savedText += input.value + '</br>\n';
+        savedText += input.value + '\n';
         display.textContent = savedText;
         input.value = ''; 
     }

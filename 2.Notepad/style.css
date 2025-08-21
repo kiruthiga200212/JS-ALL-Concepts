@@ -1,43 +1,87 @@
-h1{
+/* Heading style */
+h1 {
     text-align: center;
     background-color: pink;
-    padding-block: 25px;
+    padding: 25px 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.notepad{
+
+/* Notepad container */
+.notepad {
     width: 30%;
-    height: 40vh;
+    min-height: 40vh;
     background-color: beige;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
 }
-#display{
-    width:20%;
-    height: 25vh;
+
+/* Input box */
+#text-value {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 2px solid green;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
 }
-.btn input{
-    float: right;
-    margin: 8px 12px;
-  
+
+/* Display area */
+#display {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 25vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    white-space: pre-wrap; /* preserves new lines */
+    margin-bottom: 12px;
+    border-radius: 4px;
 }
-.btn input:nth-child(1){
+
+/* Buttons container */
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn input {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Save button */
+.btn input#saveBtn {
     background-color: rgb(107, 196, 107);
     border: none;
-    padding: 10px;
+    color: white;
 }
-.btn input:nth-child(2){
-    background-color: transparent;
-    border: 1px solid rgb(236, 106, 106);
-    padding: 10px;
-}
-.btn input:hover{
+
+.btn input#saveBtn:hover {
     opacity: 0.9;
 }
-.btn input:nth-child(2):hover{
-    background-color: rgb(243, 158, 130);
+
+/* Cancel button */
+.btn input#cancelBtn {
+    background-color: transparent;
+    border: 1px solid rgb(236, 106, 106);
+    color: rgb(236, 106, 106);
 }
-#text-value{
-    margin: 12px;
-    padding:20px;
-    border: 2px solid green;
-    outline: none;
+
+.btn input#cancelBtn:hover {
+    background-color: rgb(243, 158, 130);
+    color: white;
 }
